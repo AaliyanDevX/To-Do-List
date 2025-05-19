@@ -6,6 +6,8 @@
   margin-bottom: 20px;
   align-items: center;
   max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .todo-items, .todo-date {
@@ -13,12 +15,12 @@
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .button-add, .button-delete {
-  background-color: green; 
+  background-color: green;
   color: white;
   border: none;
   cursor: pointer;
@@ -29,10 +31,10 @@
   transition: background-color 0.3s ease;
   width: 100px;
   height: 38px;
-  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .button-add {
@@ -57,6 +59,8 @@
   gap: 10px;
   max-width: 470px;
   font-family: Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .task-item {
@@ -91,4 +95,27 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+@media (max-width: 480px) {
+  .todo-style,
+  .todo-tasks-render {
+    grid-template-columns: 1fr;
+  }
+
+  .button-add, .button-delete {
+    width: 100%;
+    height: 40px;
+  }
+
+  .task-text,
+  .due-date,
+  .task-actions {
+    padding: 10px;
+  }
+
+  .due-date {
+    justify-content: flex-start;
+    font-style: normal;
+  }
 }

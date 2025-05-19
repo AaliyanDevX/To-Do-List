@@ -96,10 +96,8 @@
   align-items: center;
   justify-content: flex-start;
 }
-
 @media (max-width: 480px) {
-  .todo-style,
-  .todo-tasks-render {
+  .todo-style {
     grid-template-columns: 1fr;
   }
 

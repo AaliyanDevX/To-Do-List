@@ -1,0 +1,94 @@
+.todo-style {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+  align-items: center;
+  max-width: 470px;
+}
+
+.todo-items, .todo-date {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.button-add, .button-delete {
+  background-color: green; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  padding: 7px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  height: 38px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-add {
+  background-color: green;
+}
+
+.button-add:hover {
+  background-color: darkgreen;
+}
+
+.button-delete {
+  background-color: red;
+}
+
+.button-delete:hover {
+  background-color: darkred;
+}
+
+.todo-tasks-render {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  gap: 10px;
+  max-width: 470px;
+  font-family: Arial, sans-serif;
+}
+
+.task-item {
+  display: contents;
+}
+
+.task-text {
+  font-size: 16px;
+  padding: 8px 12px;
+  background: #eee;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.due-date {
+  font-size: 14px;
+  color: #666;
+  padding: 8px 12px;
+  background: #eee;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-style: italic;
+}
+
+.task-actions {
+  padding: 8px 12px;
+  background: #eee;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
